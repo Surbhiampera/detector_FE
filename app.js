@@ -1,6 +1,6 @@
 // 🌐 Define API base URL once here
 // Change port 8000 if your FastAPI backend runs on a different one
-const API_BASE = process.env.API_BASE || "http://localhost:8000";
+const API_BASE = `https://detector-q5gm.onrender.com`;
 
 const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => Array.from(document.querySelectorAll(sel));
