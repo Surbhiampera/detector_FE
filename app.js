@@ -1,5 +1,5 @@
 // 🌐 Define API base URL once here
-const API_BASE = `http://0.0.0.0:8000`;
+const API_BASE = `https://detector-q5gm.onrender.com`;
 
 const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => Array.from(document.querySelectorAll(sel));
