@@ -27,26 +27,27 @@
           <div class="kpi-label">New signals detected</div>
           <div class="kpi-value" id="new-signals">-</div>
         </div>
+
         <div class="kpi kpi-list" id="kpi-risk">
           <div class="kpi-label">Top risk drugs</div>
           <ul id="top-risk-drugs"></ul>
         </div>
       </section>
 
-      <section class="charts">
-        <div class="chart-card">
+      <!-- <section class="charts"> -->
+      <!-- <div class="chart-card">
           <h3>Adverse Events over Time</h3>
           <canvas id="chart-events-time"></canvas>
-        </div>
-        <div class="chart-card">
+        </div> -->
+      <!-- <div class="chart-card">
           <h3>Drug Classes vs Adverse Events</h3>
           <canvas id="chart-pie"></canvas>
-        </div>
-        <div class="chart-card">
+        </div> -->
+      <!-- <div class="chart-card">
           <h3>Signal Trend (Top emerging)</h3>
           <canvas id="chart-signal-trend"></canvas>
-        </div>
-      </section>
+        </div> -->
+      <!-- </section> -->
 
       <section class="explorer">
         <h2>Adverse Event Explorer</h2>
@@ -88,7 +89,7 @@
         <h2>Signal Detection View</h2>
         <div class="heatmap" id="heatmap"></div>
         <div class="top-signals">
-          <h3>Top 5 New Signals</h3>
+          <h3>Top New Signals (<span id="signal-count">-</span>)</h3>
           <ul id="top-signals"></ul>
         </div>
       </section>
@@ -101,7 +102,21 @@
 
       <section class="alerts">
         <h2>Alerts & Notifications</h2>
+        <div class="alerts-summary">
+          <div class="alert-count">
+            <span class="count-label">Alerts:</span>
+            <span class="count-value" id="total-alerts-count">-</span>
+          </div>
+          <!-- <div class="new-signals-count">
+            <span class="count-label">New Signals Detected:</span>
+            <span class="count-value" id="new-signals-detected">-</span>
+          </div> -->
+        </div>
         <ul id="alerts-list"></ul>
+        <div class="alerts-controls">
+          <button id="alerts-show-more" style="display: none">Show More</button>
+          <button id="alerts-show-less" style="display: none">Show Less</button>
+        </div>
       </section>
     </main>
 
